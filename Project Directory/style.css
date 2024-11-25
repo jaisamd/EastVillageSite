@@ -1,0 +1,219 @@
+/* Map STYLING NOTES
+Always set the map height explicitly to define the size of the
+* element that contains the map. */
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#map {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+/* Optional: Makes the sample page fill the window. */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styling */
+
+body {
+    background-color: #f5e1d6;
+    font-family: "Roboto Mono", serif;
+}
+
+
+h1 {
+    font-size: 3em;
+    font-weight: 200;
+    margin-bottom: 1px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 600
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+.maincontainer {
+    position: relative;
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.imagecontainer {
+    position: relative;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.centeredtextoverlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ff0000;
+    text-align: left;
+    font-size: 5em;
+    font-weight: 400;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 30px;
+    padding-bottom: 10%;
+    width: 90%;
+}
+
+.underimage {
+    opacity: 0.8;
+}
+
+p {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+}
+
+#pdisplay {
+    color: #ff0000;
+    text-align: left;
+    font-size: 3em;
+    font-weight: 100;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    width: 85%;
+}
+
+a:link {
+    color: #ff0000;
+}
+
+a:visited {
+    color: #0000ff;
+}
+
+a:hover {
+    color: #e6ac25;
+}
+
+ol {
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+#main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 48%;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    border-top-style: solid;
+    border: 3px solid #0000FF;
+    padding: 10px;
+    padding-bottom: 18%;
+}
+
+#headinglevel2 {
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 0px;
+    width: 100%;
+}
+
+#topnav {
+    text-align: center;
+    margin-top: 10%;
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%;
+}
+
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 10px;
+}
+
+#footer {
+    text-align: left;
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+th,
+td {
+    padding-top: 50px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 15px;
+}
+
+.copyright {
+    position: fixed;
+    left: 0;
+    bottom: 5%;
+    width: 100%;
+    color: red;
+    border: 0;
+    text-align: center;
+    font-size: x-small;
+}
