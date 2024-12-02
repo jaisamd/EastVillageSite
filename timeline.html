@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>The East Village Project Map</title>
+  <meta name="author" content="Marian, Jairo, Lexi, Zoe">
+  <link rel="stylesheet" href="myfirstcss.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <script>
+    (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })({
+      key: "AIzaSyAUfVoiLhHOaxmUpfrmuIfvKV8ivVZPu90",
+      v: "weekly",
+      // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+      // Add other bootstrap parameters as needed, using camel case.
+    });
+    // Initialize and add the map
+    // [START maps_advanced_markers_accessibility]
+
+    // Initialize and add the map
+    let map;
+
+    async function initMap() {
+      // Request needed libraries.
+      const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+      const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
+        "marker",
+      );
+      const map = new Map(document.getElementById("map"), {
+        zoom: 17,
+        center: { lat: 40.72702, lng: -73.98307 },
+        mapId: "4504f8b37365c3d0",
+      });
+      // Set LatLng and title text for the markers. The first marker (Boynton Pass)
+      // receives the initial focus when tab is pressed. Use arrow keys to move
+      // between markers; press tab again to cycle through the map controls.
+      const tourStops = [
+        {
+          position: { lat: 40.72490, lng: -73.99014 },
+          title: "Anthology Film Archives",
+          artist: "Jonas Mekas"
+        },
+        {
+          position: { lat: 40.73129, lng: -73.98614 },
+          title: "Peter Hujar's Loft",
+          artist: "Peter Hujar"
+        },
+        {
+          position: { lat: 40.72365, lng: -73.98740 },
+          title: "Claes Oldenburg The Store",
+          artist: "Claes Oldenburg"
+        },
+        {
+          position: { lat: 40.72729, lng: -73.98895 },
+          title: "La Mama",
+          artist: "La Mama"
+        },
+      ];
+      // Create an info window to share between markers.
+      const infoWindow = new InfoWindow();
+
+      // Create the markers.
+      tourStops.forEach(({ position, title }, i) => {
+        const pin = new PinElement({
+          glyph: `${i + 1}`,
+          scale: 1.5,
+        });
+        // [START maps_advanced_markers_accessibility_marker]
+        const marker = new AdvancedMarkerElement({
+          position,
+          map,
+          title: `${i + 1}. ${title}`,
+          content: pin.element,
+          gmpClickable: true,
+        });
+
+        // [END maps_advanced_markers_accessibility_marker]
+        // [START maps_advanced_markers_accessibility_event_listener]
+        // Add a click listener for each marker, and set up the info window.
+        marker.addListener("click", ({ domEvent, latLng }) => {
+          const { target } = domEvent;
+
+          infoWindow.close();
+          infoWindow.setContent(marker.title);
+          infoWindow.open(marker.map, marker);
+        });
+        // [END maps_advanced_markers_accessibility_event_listener]
+      });
+    }
+
+    initMap();
+    // [END maps_advanced_markers_accessibility]
+
+  </script>
+</head>
+
+<body>
+  <!--The div element for the map -->
+
+  <div id="topnav">
+    <ul class="no-bullets">
+      <li><a href="glossary.html">Glossary</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="homepage.html">Homepage</a></li>
+    </ul>
+  </div>
+
+  <div id="map"></div>
+
+  <div class="maincontainer">
+    <div class="imagecontainer">
+      <img src="symbols.gif" alt="symbol collage" class="underimage">
+      <div class="centeredtextoverlay-main">Symbols have power.<br>
+        We use them to signal our values and to transform our identities.</div>
+    </div>
+
+    <div id="pdisplay">
+      <p> On a planetary scale, businesses convey national identity, preserve national security, maintain or disturb the
+        natural environment and impact global peace through the brand narratives they design and the products they
+        manufacture.
+      </p>
+    </div>
+
+    <div id="headinglevel2">
+      <h3 style="color:red"> <a href="glossary.html">GLOSSARY</a> | <a href="timeline.html">TIMELINE</a> | <a href="homepage.html">HOMEPAGE</a></h3>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    <h3>© 2024 Marian St. Laurent, </h3>
+  </div>
+
+</body>
+
+</html>
