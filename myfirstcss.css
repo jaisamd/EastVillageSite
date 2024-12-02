@@ -147,6 +147,10 @@ ul.no-bullets {
     margin-right: 10px;
 }
 
+hr {
+    border: 3px solid black
+}
+
 #footer {
     text-align: left;
     padding-left: auto;
