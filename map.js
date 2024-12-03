@@ -50,8 +50,10 @@ async function initMap() {
   // Create the markers
   tourStops.forEach(({ position, title, artist }, i) => {
     const pin = new PinElement({
-      glyph: `${i + 1}`,
-      scale: 1.5,
+        glyphColor: "#ff8300",
+        background: "#e6ac25",
+        borderColor: "#ff8300",
+        scale: .75,
     });
 
     const marker = new AdvancedMarkerElement({
