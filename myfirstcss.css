@@ -198,3 +198,7 @@ td {
     width: 100%;
     /* The width is the width of the web page */
 }
+#modal-content {
+    max-height: calc(90vh - 80px); /* Allow for padding and title */
+    overflow-y: auto;
+  }

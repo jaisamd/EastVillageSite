@@ -5,7 +5,7 @@
   // Add other bootstrap parameters as needed, using camel case.
 });
  
- // Initialize and add the map
+  // Initialize and add the map
 let map;
 
 async function initMap() {
@@ -23,19 +23,25 @@ async function initMap() {
   // Define tour stops with additional data
   const tourStops = [
     {
-      position: { lat: 40.72490, lng: -73.99014 },
-      title: "Anthology Film Archives",
-      artist: "Jonas Mekas",
+        position: { lat: 40.72490, lng: -73.99014 },
+        title: "Anthology Film Archives",
+        artist: "Jonas Mekas",
+        description: "Opened in 1970 by Jonas Mekas, Jerome Hill, P. Adams Sitney, Peter Kubelka, and Stan Brakhage, Anthology in its original conception was a showcase for the Essential Cinema Repertory collection. An ambitious attempt to define the art of cinema by means of a selection of films which would screen continuously, the Essential Cinema collection was intended to encourage the study of the medium’s masterworks as works of art rather than disposable entertainment, making Anthology the first museum devoted to film as an art form. The project was never completed, but even in its unfinished state it represented an uncompromising critical overview of cinema’s history, and remains a crucial part of Anthology’s exhibition program.",
+        image: "Project Directory/EVimages/anthology_image.jpg",
     },
     {
       position: { lat: 40.73129, lng: -73.98614 },
       title: "Peter Hujar's Loft",
       artist: "Peter Hujar",
+      description: "",
+      image: "",
     },
     {
       position: { lat: 40.72365, lng: -73.98740 },
       title: "Claes Oldenburg The Store",
       artist: "Claes Oldenburg",
+      description: "",
+      image: "",
     },
     {
       position: { lat: 40.72729, lng: -73.98895 },
@@ -48,12 +54,13 @@ async function initMap() {
   const infoWindow = new InfoWindow();
 
   // Create the markers
-  tourStops.forEach(({ position, title, artist }, i) => {
+  tourStops.forEach(({ position, title, artist, description, image }, i) => {
     const pin = new PinElement({
-        glyphColor: "#ff8300",
-        background: "#e6ac25",
-        borderColor: "#ff8300",
-        scale: .75,
+  
+    glyphColor: "#e6ac25",
+    background: "#FFD514",
+    borderColor: "#e6ac25",
+    scale: .75,
     });
 
     const marker = new AdvancedMarkerElement({
@@ -70,11 +77,50 @@ async function initMap() {
         <div style="font-family: Arial, sans-serif; line-height: 1.5;">
           <h2 style="margin: 0;">${title}</h2>
           <p style="margin: 0;"><strong>Artist:</strong> ${artist}</p>
+          <button id="learn-more" style="margin-top: 10px; padding: 5px 10px; font-size: 14px; cursor: pointer;">
+            Learn More
+          </button>
         </div>
       `;
-      infoWindow.close();
+    //   infoWindow.close();
       infoWindow.setContent(infoContent);
       infoWindow.open(map, marker);
+
+      google.maps.event.addListenerOnce(infoWindow, "domready", () => {
+        document.getElementById("learn-more").addEventListener("click", () => {
+          openModal(title, description, image);
+        });
+      });
+
+      function openModal(title, description, image) {
+        const modal = document.getElementById("modal");
+        const overlay = document.getElementById("overlay");
+      
+        document.getElementById("modal-title").textContent = title;
+        document.getElementById("modal-content").innerHTML = `
+          <p>${description || "No description available."}</p>
+          ${image ? `<img src="${image}" alt="${title}" style="max-width: 100%; height: auto; margin-top: 10px;">` : ""}
+        `;
+      
+        modal.style.display = "block";
+        overlay.style.display = "block";
+
+        document.getElementById("close-modal").addEventListener("click", closeModal);
+
+      }
+      
+      
+      function closeModal() {
+        const modal = document.getElementById("modal");
+        const overlay = document.getElementById("overlay");
+
+        // Hide the modal and overlay
+        modal.style.display = "none";
+        overlay.style.display = "none";
+
+        // Remove event listener to prevent it from being added multiple times
+        document.getElementById("close-modal").removeEventListener("click", closeModal);
+      }
     });
   });
 }
