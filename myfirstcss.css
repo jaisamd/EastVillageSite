@@ -28,6 +28,8 @@ h2 {
     font-family: 'Editorial New';
     color: #ff0000;
     text-align: left;
+    font-family: 'Editorial New';
+    font-style: normal; 
     font-size: 4em;
     font-weight: 200;
     margin-left: 120px;
@@ -228,11 +230,6 @@ td {
     font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Regular.otf') format('opentype');
     font-weight: 400;
-    font-style: normal;
- }
-
- @font-face {
-    font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Italic.otf') format('opentype');
     font-weight: 400;
     font-style: italic;
@@ -265,7 +262,7 @@ td {
     font-weight: 200;
     font-style: italic;
  }
- 
+
 #close-modal {
     margin-top: 10px;
     padding: 5px 10px
