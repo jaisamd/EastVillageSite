@@ -34,21 +34,20 @@ async function initMap() {
         position: { lat: 40.73112, lng: -73.98631 },
         title: "Peter Hujar's Loft",
         artist: "Peter Hujar",
-        description: "",
-        image: "",
+      
     },
     {
         position: { lat: 40.72365, lng: -73.98740 },
         title: "Claes Oldenburg The Store",
         artist: "Claes Oldenburg",
         address: "107 East 2nd Street",
-        description: "",
-        image: "",
+       
     },
     {
         position: { lat: 40.72664, lng: -73.99043 },
         title: "La Mama Experimental Theater",
         address: "66 East 4th Street", 
+        artist: "See Glossary",
     },
     {
         position: { lat: 40.7271036, lng: -73.9873551 },
@@ -60,48 +59,59 @@ async function initMap() {
         position: { lat: 40.72604, lng: -73.98392 },
         title: "Pyramid Club",  
         address: "101 Avenue A", 
+        artist: "See Glossary",
     },
     {
         position: { lat: 40.72923, lng: -73.98483 },
         title: "East Village Eye",   
         address: "159 1st Avenue",
+        artist: "See Glossary",
     },
     {
         position: { lat: 40.72664, lng: -73.97788 },
         title: "Peace Eye Bookstore",
         address: "383 East 10th Street",
+        arists: "See Glossary",
         description: "Opened by Ed Sanders in 1964, Peace Eye Bookstore was a second home to the Beats. It was frequented by poets, musicians, and activists. Sanders recalled: “The bookstore became pretty famous. It was the stopping off point for all visiting librarians and professors because I had a lot of well-known writers hanging out there—William Burroughs, Allen Ginsberg.”[1] The shop not only played host to writers but also sold “literary curiosities,” including pubic hair from sixteen poets, Ginsberg’s cold-cream jars, and hairs from his beard. The shop was raided by the police on January 2, 1966, under the pretense of responding to a burglary. Sanders was charged with selling lewd and obscene prints and literature, and although the case was dismissed, the confiscated items were never returned, and he was effectively forced out of business.",
        
     },
     {
         position: { lat: 40.72903, lng: -73.98632 },
-        title: "St. Mark's Place",
+        title: "St. Marks Place",
+        artist: "See Glossary",
+        address: "St. Marks Place",
        
     },
     {
         position: { lat: 40.72680, lng: -73.98178 },
         title: "Tompkins Square Park", 
+        artist: "See Glossary",
+        address: "Tompkins Square Park",
     },
     {
         position: { lat: 40.72889, lng: -73.98497 },
         title: "The Living Theater",  
         address: "151 1st Avenue",
+        artist: "See Glossary",
     },
     {
         position: { lat: 40.72851, lng: -73.99148 },
         title: "The Village Voice",
         address: "36 Cooper Square",
+        artist: "See Glossary",
        
     },
     {
         position: { lat: 40.73222, lng: -73.98968 },
         title: "Tanager Gallery",
         address: "90 East 10th Street",
+        artist: "Louise Bourgeois, Alex Katz, Mary Abbott, Sidney Geist"
     },
     {
         position: { lat: 40.73098, lng: -73.98979 },
         title: "Willem de Kooning's Studio",   
         address: "88 East 10th Street",
+        artist: "Willem de Kooning",
     },
     {
         position: { lat: 40.73104, lng: -73.98976 },
@@ -111,65 +121,77 @@ async function initMap() {
     },
     {
         position: { lat: 40.72965, lng: -73.98167 },
-        title: "Allen Ginsberg Studio",
+        title: "Allen Ginsberg's Studio",
+        artist: "Allen Ginsberg",
         address: "437 East 12th Street",
     },
     {
         position: { lat: 40.72638, lng: -73.98995 },
         title: "Louis N. Jaffe Art Theater / Club 181 / Phoenix Theater",
         address: "82 East 4th Street",
+        artist: "See Glossary",
         description: "The Louis N. Jaffe Art Theater, a former Yiddish theater, was the location of the Mafia-controlled Club 181 (1945-51), known for its lavish shows of “female impersonators” (a term used at the time) and “drag king” staff, and the pioneering Off-Broadway Phoenix Theater (1953-61)",
     },
     {
         position: { lat: 40.73149, lng: -73.99248 },
         title: "The Ninth Street Show",
         address: "60 East 9th Street",
+        artist: "Willem de Kooning, Helen Frankenthaler, Philip Guston, Grace Hartigan, Hans Hofmann, Lee Krasner, and Jackson Pollock",
         description: "Organized by the Artist’s Club and curated by Leo Castelli in 1951, the Ninth Street show was the first time the New York School shows together. It included 74 artists, including Willem de Kooning, Helen Frankenthaler, Philip Guston, Grace Hartigan, Hans Hofmann, Lee Krasner, and Jackson Pollock. ",   
     },
     {
         position: { lat: 40.72949, lng: -73.97951 },
         title: "David Wojnarowicz Studio",
+        artist: "David Wojnarowicz",
         address: "529 East 13th Street", 
     },
     {
         position: { lat: 40.73043, lng: -73.98819 },
         title: "Diane Arbus Apartment",
         address: "120 East 10th Street", 
+        artist: "Diane Arbus",
     },
     {
         position: { lat: 40.72851, lng: -73.98401 },
         title: "Fun Gallery",
         address: "254 East 10th Street", 
+        artist: "Kenny Scharf, Jean-Michel Basquiat, Keith Haring",
     },
     {
         position: { lat: 40.72812, lng: -73.98660 },
         title: "Joan Mitchell Studio",
         address: "60 St. Marks Place", 
+        artist: "Joan Mitchell",
     },
     {
         position: { lat: 40.73115, lng: -73.98998 },
         title: "Area Gallery",
         address: "82 East 10th Street", 
+        artist: "Tom Boutis, John Ireland Collins, Charles DuBack, Joe Fiore, Bernard Langlais, Ed Moses, Daphne Mumford, Paul Yakovenko",
     },
     {
         position: { lat: 40.73081, lng: -73.98957 },
         title: "Phoenix Gallery",
         address: "40 3rd Avenue", 
+        artist: "",
     },
     {
         position: { lat: 40.73106, lng: -73.98933 },
         title: "March Gallery",
         address: "95 East 10th Street", 
+        artist: "Stanley Fisher, Sam Goodman, Jean-Jacques Lebel, Boris Lurie, Kenneth van Sickle",
     },
     {
         position: { lat: 40.73223, lng: -73.99161 },
-        title: "Elaine de Kooning",
+        title: "Elaine de Kooning's Studio",
         address: "791 Broadway", 
+        artist: "Elaine de Kooning",
     },
     {
         position: { lat: 40.73053, lng: -73.98799 },
-        title: "Robert Gober",
+        title: "Robert Gober's Studio",
         address: "119 East 10th Street", 
+        artist: "Robert Gober",
     },
 ];
 
@@ -177,7 +199,7 @@ async function initMap() {
   const infoWindow = new InfoWindow();
 
   // Create the markers
-  tourStops.forEach(({ position, title, artist, address, description, image }, i) => {
+  tourStops.forEach(({ position, title, address, artist, description, image }, i) => {
     const pin = new PinElement({
   
     glyphColor: " #0000ff",
@@ -232,7 +254,6 @@ async function initMap() {
         document.getElementById("close-modal").addEventListener("click", closeModal);
 
       }
-      
       
       function closeModal() {
         const modal = document.getElementById("modal");
