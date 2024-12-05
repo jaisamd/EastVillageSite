@@ -235,6 +235,7 @@ td {
 
  @font-face {
     font-family: 'Editorial New';
+<<<<<<< HEAD
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
@@ -242,6 +243,8 @@ td {
 
  @font-face {
     font-family: 'Editorial New';
+=======
+>>>>>>> 3cec4723c8c167504eb9614d260cd5434519a331
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Italic.otf') format('opentype');
     font-weight: 400;
     font-style: italic;
