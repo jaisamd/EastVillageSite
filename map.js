@@ -177,10 +177,10 @@ async function initMap() {
   const infoWindow = new InfoWindow();
 
   // Create the markers
-  tourStops.forEach(({ position, title, artist, description, image }, i) => {
+  tourStops.forEach(({ position, title, artist, address, description, image }, i) => {
     const pin = new PinElement({
   
-    glyphColor: " #031070",
+    glyphColor: " #0000ff",
     background: " #0000ff",
     borderColor: " #031070",
     scale: .75,
@@ -197,9 +197,10 @@ async function initMap() {
     // Add click listener for the marker
     marker.addListener("click", () => {
       const infoContent = `
-        <div style="font-family: Arial, sans-serif; line-height: 1.5;">
+        <div style="font-family: Arial, sans-serif; font-size: .5em;">
           <h2 style="margin: 0;">${title}</h2>
           <p style="margin: 0;"><strong>Artist:</strong> ${artist}</p>
+          <p style="margin: 0;"><strong>Address:</strong> ${address}</p>
           <button id="learn-more" style="margin-top: 10px; padding: 5px 10px; font-size: 14px; cursor: pointer;">
             Learn More
           </button>

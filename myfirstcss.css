@@ -1,5 +1,5 @@
 body {
-    background-color:  #F2F2EB;
+    background-color: #F2F2EB;
     font-family: "Roboto Mono", serif;
 }
 
@@ -82,7 +82,7 @@ p {
     position: left;
     text-align: left;
     margin-left: 120px;
-    padding-bottom:3%;
+    padding-bottom: 3%;
 }
 
 .footer-container {
@@ -156,7 +156,7 @@ ol {
     text-align: left;
     padding-left: auto;
     padding-right: auto;
-    width:100%;
+    width: 100%;
 }
 
 .column {
@@ -191,7 +191,7 @@ td {
 /*  HELP */
 .copyright {
     position: fixed;
-    left: 50%; 
+    left: 50%;
     right: 50%;
     bottom: 5%;
     width: 100%;
@@ -215,4 +215,29 @@ td {
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
+}
+
+#close-modal {
+    margin-top: 10px;
+    padding: 5px 10px
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    height: 50%; 
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    z-index: 1000;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#modal-content {
+    max-height: calc(80vh - 80px);
+    /* Allow for padding and title */
+    overflow: scroll;
 }
