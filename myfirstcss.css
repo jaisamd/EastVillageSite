@@ -17,7 +17,7 @@ h1 {
     color: black;
     text-align: left;
     font-size: 6em;
-    font-weight: 800;
+    font-weight: 400;
     font-style: italic;
     letter-spacing: 2px;
     margin-left: 120px;
@@ -25,10 +25,12 @@ h1 {
 }
 
 h2 {
-    color: #ff0000;
+    color: #000000;
     text-align: left;
+    font-family: 'Editorial New';
+    font-style: normal; 
     font-size: 4em;
-    font-weight: 100;
+    font-weight: 400;
     margin-left: 120px;
     margin-right: 120px;
     width: 85%;
@@ -228,18 +230,21 @@ td {
     font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Regular.otf') format('opentype');
     font-weight: 400;
+    font-style: normal; 
  }
 
  @font-face {
     font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Regular.otf') format('opentype');
     font-weight: 400;
+    font-style: normal;
  }
 
  @font-face {
     font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Italic.otf') format('opentype');
     font-weight: 400;
+    font-style: italic;
  }
 
 @font-face {

@@ -197,7 +197,7 @@ async function initMap() {
     // Add click listener for the marker
     marker.addListener("click", () => {
       const infoContent = `
-        <div style="font-family: Arial, sans-serif; font-size: .5em;">
+        <div style="font-family: roboto mono; font-size: .4em;">
           <h2 style="margin: 0;">${title}</h2>
           <p style="margin: 0;"><strong>Artist:</strong> ${artist}</p>
           <p style="margin: 0;"><strong>Address:</strong> ${address}</p>
