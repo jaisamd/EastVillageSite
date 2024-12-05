@@ -256,6 +256,7 @@ td {
     font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Ultralight.otf') format('opentype');
     font-weight: 200;
+    font-style: normal;
  }
 
  @font-face {
