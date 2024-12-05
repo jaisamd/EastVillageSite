@@ -18,15 +18,15 @@ h1 {
     text-align: left;
     font-size: 6em;
     font-weight: 800;
-    font-style: normal;
-    letter-spacing: 2px;
+    font-style: italic;
+    letter-spacing: 3px;
     margin-left: 120px;
     margin-right: 120px;
 }
 
 h2 {
     font-family: 'Editorial New';
-    color: #ff0000;
+    color: black;
     text-align: left;
     font-family: 'Editorial New';
     font-style: normal; 
@@ -268,22 +268,40 @@ td {
     padding: 5px 10px
 }
 
+
+/* to style in - depth infowindow */
+
 #modal {
     display: none;
     position: fixed;
-    height: 50%; 
-    width: 50%;
+    height: 35%; 
+    width: 25%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
     padding: 20px;
     z-index: 1000;
-    border: 1px solid #ccc;
+    border: 2px solid black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 #modal-content {
     max-height: calc(80vh - 80px);
+    font-size: 1em;
+    font-family:monospace;
     /* Allow for padding and title */
     overflow: scroll;
 }
+
+.button {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
