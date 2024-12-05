@@ -3,33 +3,6 @@ body {
     font-family: "Roboto Mono", serif;
 }
 
-
-h1 {
-    font-size: 3em;
-    font-weight: 200;
-    margin-bottom: 1px;
-}
-
-h2 {
-    font-size: 2em;
-    font-weight: 400;
-}
-
-h3 {
-    font-size: 1.5em;
-    font-weight: 500;
-    margin-bottom: 50px;
-}
-
-h4 {
-    font-size: 1em;
-    font-weight: 600
-}
-
-h5 {
-    font-size: 1.25rem;
-}
-
 .maincontainer {
     position: relative;
     padding-top: 5%;
@@ -38,49 +11,86 @@ h5 {
     text-align: center;
 }
 
-.imagecontainer {
-    position: relative;
-    padding-top: 5%;
-    text-align: center;
-}
-
-.centeredtextoverlay-main {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* type hierarchy */
+h1 {
     color: #ff0000;
     text-align: left;
     font-size: 5em;
+    font-size: 5em;
     font-weight: 500;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding-top: 30px;
-    padding-bottom: 10%;
-    width: 90%;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 
-.underimage {
-    opacity: 0.8;
+h2 {
+    color: #ff0000;
+    text-align: left;
+    font-size: 4em;
+    font-weight: 100;
+    margin-left: 120px;
+    margin-right: 120px;
+    width: 85%;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 300;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 3px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400
+}
+
+h5 {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+h6 {
+    text-align: left;
+    font-size: 1.2em;
 }
 
 p {
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 300;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 50px;
+    line-height: 1.5;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 10px;
+    margin-bottom: 1px;
 }
 
-#pdisplay {
-    color: #ff0000;
+
+/* special text formatting */
+#topnav {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 6%;
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%;
+}
+
+.creds_container {
+    position: left;
     text-align: left;
-    font-size: 3em;
-    font-weight: 100;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    width: 85%;
+    margin-left: 120px;
+    padding-bottom:3%;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    border-top-style: solid;
+    padding: 10px;
+    padding-bottom: 18%;
 }
 
 a:link {
@@ -95,18 +105,20 @@ a:hover {
     color: #e6ac25;
 }
 
-ol {
-    text-align: left;
-    margin-left: 150px;
-    margin-bottom: 50px;
+
+/* to style h1 and h2 typeface over imagery add this class */
+
+.centeredtextoverlay-main {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+    padding-bottom: 10%;
+    width: 100%;
 }
 
-#main {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
+/* to position imagery */
 
 img {
     display: block;
@@ -115,30 +127,25 @@ img {
     width: 48%;
 }
 
-.footer-container {
-    width: 80%;
-    margin: 0 auto;
-    border-top-style: solid;
-    padding: 10px;
-    padding-bottom: 18%;
-}
-
-#headinglevel2 {
+.imagecontainer {
+    position: relative;
+    padding-top: 2%;
     text-align: center;
-    padding-bottom: 0px;
-    width: 100%;
 }
 
-#topnav {
-    text-align: center;
-    margin-top: 10%;
-    padding-left: auto;
-    padding-right: auto;
-    width: 100%;
+.underimage {
+    opacity: 0.8;
 }
 
+/* tables and lists */
 
-ul.no-bullets {
+ol {
+    text-align: left;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.ul_no-bullets {
     list-style-type: none;
     padding: 0;
     margin-right: 10px;
@@ -154,6 +161,7 @@ ul.no-bullets {
 .column {
     float: left;
     width: 33.33%;
+    text-align: left;
 }
 
 .row:after {
@@ -179,9 +187,11 @@ td {
     padding: 15px;
 }
 
+/*  HELP */
 .copyright {
     position: fixed;
-    left: 0;
+    left: 50%; 
+    right: 50%;
     bottom: 5%;
     width: 100%;
     color: red;
@@ -190,6 +200,13 @@ td {
     font-size: x-small;
 }
 
+/*  what is this for? */
+#main {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 
 /* Set the size of the div element that contains the map */
 #map {
@@ -198,7 +215,3 @@ td {
     width: 100%;
     /* The width is the width of the web page */
 }
-#modal-content {
-    max-height: calc(90vh - 80px); /* Allow for padding and title */
-    overflow-y: auto;
-  }

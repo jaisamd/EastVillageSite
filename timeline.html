@@ -13,7 +13,7 @@
 <body>
 
   <div id="topnav"> 
-    <ul class="no-bullets">
+    <ul class="ul_no-bullets">
       <li><a href="map.html">Map</a></li>
       <li><a href="timeline.html">Timeline</a></li>
       <li><a href="glossary.html">Glossary</a></li>
@@ -21,244 +21,94 @@
      </ul>
   </div>
   
-  <div id="map"></div>
-
-  <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
+<div class="maincontainer">
+    
+  <div class="imagecontainer">
+    <img src="./images/tvcollage.png" class="underimage" alt="tv mgm collage">
+    <h1>History of the East Village</h1>
+    </div>
   
-  /* Full-width containers */
-  .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
+  <h2>A timeline of the neighborhoods economic, political and creative developments from the 1950s through today.</p> 
+  </h2>
+
+   <h3>Change over time in the Lower East Side</h3>
   
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-  }
+                <table>
+                <tr>
+                    <th>Postwar Period</th>
+                    <th>Sixties and Seventies</th>
+                    <th>Late 20th Century</th>
+                    <th>21st Century</th>
+                </tr>
+            
+                <tr>
+                    <td>Postwar Period summary - What economomic developments impacted artist living and work spaces? What solutions did they come up with? What new ideas and reactions came about?</td>
+                    <td>Sixties and Seventies summary - What economomic developments impacted artist living and work spaces? What solutions did they come up with? What new ideas and reactions came about?</td>
+                    <td>Late 20th Century summary - What economomic developments impacted artist living and work spaces? What solutions did they come up with? What new ideas and reactions came about?</td>
+                    <td>21st Century summary - What economomic developments impacted artist living and work spaces? What solutions did they come up with? What new ideas and reactions came about?</td>
+                </tr>
+                </table>
+    
+                <h3>1940s 50s<br>New York's Bohemia and Beat Scene</h3>
+                <p>Until the mid-20th century the area was simply known as the northern part of the Lower East Side, with a similar culture of immigrant, working-class life. 
+                In the 1950s and 1960s the migration of Beatniks into the neighborhood later attracted musicians, writers, and artists who had been priced out of the rapidly 
+                gentrifying Greenwich Village. Among the first displaced Greenwich Villagers to move to the area were writers Allen Ginsberg, W. H. Auden, and Norman Mailer, 
+                who all moved to the area between 1951 and 1953.</p>  
+                
+                <div class="creds_container">
+                  <ul class="ul_no-bullets">
+                    <li>Important Cultural Events: Lorem ipsum</li>
+                    <li>Economic Developments: Lorem ipsum</li>
+                    <li>Technological Innovations: Lorem ipsum</li>
+                    <li>Local Developments: Lorem ipsum</li>
+                  </ul>  
+                </div>
 
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 15px;
-  }
+    
+                  <h4 style="color:red"> <a href="homepage.html">HOME</a> | <a href="map.html">MAP</a> | <a href="timeline.html">TIMELINE</a></h4>
   
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
-  }
-}
-</style>
-</head>
-<body>
-
-<div class="timeline">
-  <div class="container left">
-    <div class="content">
-      <h2>1940s/50s</h2>
-      <h3> NY Beat Movement, Abstract Expressionism </h3> 
-      <p>Bordered by 14th Street, Houston, Bowery and Third Streets, and the East River, the neighborhood began its modern existence as a destination for poor, working class New Yorkers, mostly European immigrants. Largely for that same reason, Beatniks began moving to the area in the 1950s looking for cheap rent. Then came writers, musicians, artists and the inevitable various industries—legitimate and not—that revolve around the creative class. Eventually, the neighborhood completely transformed.
-Until the mid-20th century the area was simply known as the northern part of the Lower East Side, with a similar culture of immigrant, working-class life. In the 1950s and 1960s the migration of Beatniks into the neighborhood later attracted musicians, writers, and artists who had been priced out of the rapidly gentrifying Greenwich Village.  Among the first displaced Greenwich Villagers to move to the area were writers Allen Ginsberg, W. H. Auden, and Norman Mailer, who all moved to the area between 1951 and 1953.</p> 
-
-<p1>A cluster of cooperative art galleries on East 10th Street–later collectively referred to as the 10th Street galleries–opened around the same time, starting with the Tanger and the Hansa which both opened in 1952. Further change came in 1955 when the Third Avenue elevated railway above the Bowery and Third Avenue was removed. This made the neighborhood more attractive to potential residents; in 1960 The New York Times reported: "This area is gradually becoming recognized as an extension of Greenwich Village ... thereby extending New York's Bohemia from river to river."
-</p1>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h2>1960s/70s</h2>
-      <h3> Happenings, Fluxus, Minimalism, Pop</h3>
-      <p>Artistic creation across decades flourished here in the late 20th century
-During the 1960s and 70s, the East Village in New York City became an epicenter for a creative community made up of experimental theaters, avant-garde filmmakers, and  artists pushing against the establishment. </p> 
-
-
-<p1>1960s
-Most galleries at the time were in SoHo. But just a generation before, in the 1960s, SoHo had also been a dilapidated mess. Artists and galleries flooded there for the large spaces and cheap rents. 
-</p1>
-
-<p2>Urban planning / rents - 60s 70s
-Looking back, the East Village of the 60s and 70s seems amazing in so many ways. But it was also kind of a rat hole. The population was extremely poor and the streets were run down, rife with prostitutes, drug dealers, crime and desperation in all forms. It was where artists lived, it was not where they exhibited. </p2>
-
-
-<p3>$275 a month: A History of Artists Living on East Second Street By Visual AIDS
-Facing a nearly bankrupt city, abandoned buildings, and a flourishing drug trade, NYC’s East Village in the 1980s became an unexpected focal point for a generation of artists who collectively changed the landscape of art in America.</p3>
-
-
-<p4>During the 1960s and 70s, the East Village in New York City became an epicenter for a creative community made up of experimental theaters, avant-garde filmmakers, and  artists pushing against the establishment. </p4>
-
-<p5>The 1960 Times article stated that rental agents were increasingly referring to the area as "Village East" or "East Village." The new name was used to differentiate the area from the image of slums evoked by the Lower East Side. According to The New York Times, a 1964 guide called Earl Wilson's New York wrote: "Artists, poets and promoters of coffeehouses from Greenwich Village are trying to remelt the neighborhood under the high-sounding name of 'East Village'." Newcomers and real estate brokers popularized the new name, and the term was adopted in the mid-1960s.  A weekly newspaper with the neighborhood's new name, The East Village Other, started publication in 1966. The New York Times declared that the neighborhood "had come to be known" as the East Village in the edition of June 5, 1967.
-</p5>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="content">
-      <h2>1970s</h2>
-      <h3> Porn and Punk </h3>
-      <p>The artists of the downtown scene were reacting to the tumultuous political times of the 1970’s:  the Watergate scandal, Nixon’s resignation, and the Vietnam War.  The political climate, coupled with the deep recession of the mid-to-late 70’s that included high unemployment and runaway inflation, found New York facing a looming bankruptcy.  Downtown lofts were plentiful and cheap, but the neighborhood was known for negligent landlords and dangerous streets.  This unstable environment created a need for artists to form a community, which was fertile ground for expression for Basquiat and the new breed of artists.
-
-CBGB opened on Bowery and First Street in 1973. Then in 1979, the East Village Eye, the paper that first published the word “hip-hop,” debuted.
-
-In the fall of 1978, Basquiat met fellow downtown artists and scene makers Keith Haring and Kenny Scharf, both major players in the emerging East Village art scene. They were to remain an integral part of Basquiat’s life and work.
-</p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h2>1980S</h2>
-      <h3> Post Punk, Neo-Ex, Appropriation Art </h3>
-      <p>Neo-expressionism, figuration, and punk rock were among the artistic movements that germinated in the East Village in the 80’s.
-
-Artists taken by AIDS - vast numbers of New York’s best people—Peter Hujar, Flaming Creatures director Jack Smith, Cookie Mueller, Robert Mapplethorpe, painter Nicolas Moufarrege—died fast in the aids epidemic or a few years into it.
-Commercialization Gary Indiana 1980s death AIDS
-East Village Was the New SoHo
-The Reagan-era scene - Gentrification - Then rents started rising. 
-When art becomes a scene, everything changes: galleries move in, artists sign contracts, collectors show up in limousines, reporters cover shows, fashion gets noticed, opportunities multiply, and everyone get rich. That happened in the East Village in the 1980s. But art had already been part of the everyday life of the neighborhood long before that. 
-
-By the time Ronald Reagan was elected president in 1980 and the recession ended, the New York real estate market boomed and SoHo became downright unaffordable. It became clear to art dealers that if they wanted to do anything new and interesting in New York they would have to go somewhere else.
-
-The enormous piles of cash rolling in created a cycle of investment that raised rents higher and brought new development to the area. That created a division amongst local residents. Most were still extremely poor. Landlords stopped maintaining properties in hopes residents would leave their rent-controlled apartments. One newspaper clipping from this time reports that the entire back wall of a mid-rise apartment building in the area collapsed from neglect. Meanwhile, the neighborhood was also the center of the New York AIDS epidemic. Basically, East Village was the epitome of Reagan-era America: money, celebrity, drugs, and death surrounded by regular people just struggling to survive.
-
-
-New York / New Wave exhibition at PS 1 in Queens - 1981 
-“NEW YORK/NEW WAVE” brings together graffiti art, the denizens of Club 57, and the aesthetic offshoots of New Wave music at P.S. 1 in Queens. Like the “Times Square Show” a year earlier, Diego Cortez’s exhibition proves seminal for the incipient East Village scene.
-
-
-Appropriation art
-Sherrie Levine’s photographs after Walker Evans at Metro Pictures (a SoHo gallery more closely tailored to my own fresh curiosity for the new photographic work championed by that establishment at the time)
-Other appropriation artists such as Louise Lawler, Vikky Alexander, Barbara Kruger, and Mike Bidlo came into prominence in New York’s East Village in the 1980s. The importance of appropriation art in contemporary culture lies in its ability to fuse broad cultural images as a whole and direct them towards narrower contexts of interpretation
-
-
-Pictures Generation
-In 1977, Levine participated in the exhibition Picturesat Artists Space in New York, curated by Douglas Crimp.[8] Other artists in the exhibition included Robert Longo, Troy Brauntuch, Jack Goldstein, and Philip Smith.[8] Crimp's term, "Pictures Generation," was later used to describe the generation of artists in the late 1970s and early 1980s who were moving away from minimalism and towards picture-making.
-</p>
-    </div>
-  </div>
   
-  <div class="container left">
-    <div class="content">
-      <h2>21st Century Art Movements</h2>
-      <h3> Contemporary Art </h3>
-      <p>At the start of the 21st century, the Y2K bug had been less frightening than people had. Two recessions would come to pass in the first 10 years and one sneaking up if not hitting in full forse in the mid 2020s. The United States was loosening its grip on the world and new imperial powers were becoming more prominent. As time reached into the 2010s there was a time of near economic bliss with over 10 years of no recession something that had never happened before in the history of the country.
-      
-      New York rent was raising due to supply and demand and artists could no longer realistically get by on the salaries they were being offered while existing in an artistic space. The East Village is now filled with farmers markets of artists from all over the island and there is not as much of an artistic identity. Contemporary Art is not something that started in the East Village and it is not something that started in the 21st century either. There is much debate of when contemporary art started just as there is much debate of what makes someone a New Yorker. Contemporary Art is an amalgamation of art as is the East Village. Enough time has not passed to be able to tell where the future of Art in the East Village will go but with creatives pouring in and out of every apartment there is certainly more to come. 
-      </p>
-    </div>
-  </div>
+                  <div class="footer-container">
+                       <div class="column">
+                           <div id="floatingbox">
+                               <ul>
+                               <h5 style="color:red">Latest Inspiration</h5>
+                               <li><a href="https://en.wikipedia.org/wiki/Gary_Indiana">Gary Indiana</a>,<a href="https://www.nytimes.com/2024/10/28/movies/paul-morrissey-dead.html">Paul Morrisey</a></li>
+                               <li><a href="https://www.nme.com/news/music/the-cure-2025-world-songs-lost-world-tour-2029-anniversary-tim-pope-documentary-3802253">Tim Pope Cure Documentary 2025</a></li>
+                               <li><a href="https://www.e-flux.com/events/628595/trevor-paglen-you-ve-just-been-f-cked-by-psyops-ufos-magic-mind-control-electronic-warfare-and-the-future-of-media/">Trevor Paglen at e-flux Tonight</a></li>
+                               <li><a href="https://apnews.com/article/anora-sean-baker-interview-06edab5c217198d2a449875400f4d06e">The New Sean Baker Film</a></li>
+                               </ul>   
+                           </div>
+                       </div>
+               
+                       <div class="column">
+                       <div id="floatingbox">
+                           <ul>
+                               <h5 style="color:red">Expertise</h5>
+                               <li>artist's archives</li>
+                               <li>cultural strategy</li>
+                               <li>digital preservation</li>
+                               <li>corporate archives</li>
+                           </ul>   
+                           </div>
+                       </div>
+               
+                       <div class="column">
+                           <div id="floatingbox">
+                               <ul>
+                                   <h5 style="color:red">Contact</h5>
+                                   <li>Instagram</li>
+                                   <li>Website</li>
+                                   <li>Red Hook, Brooklyn</li>
+                                   <li>New York, New York</li>
+                               </ul>   
+                           </div>
+               
+                       </div>
+                     </div>
 
-</div>
+
+    <div class="copyright"><h6>© 2024 INFO 654 </h6></div> 
 
 </body>
 </html>
