@@ -13,11 +13,13 @@ body {
 
 /* type hierarchy */
 h1 {
-    color: #ff0000;
+    font-family: 'Editorial New';
+    color: black;
     text-align: left;
-    font-size: 5em;
-    font-size: 5em;
-    font-weight: 500;
+    font-size: 6em;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 2px;
     margin-left: 120px;
     margin-right: 120px;
 }
@@ -94,6 +96,7 @@ p {
     padding-bottom: 18%;
 }
 
+
 a:link {
     color: #ff0000;
 }
@@ -105,6 +108,7 @@ a:visited {
 a:hover {
     color: #e6ac25;
 }
+
 
 
 /* to style h1 and h2 typeface over imagery add this class */
@@ -216,3 +220,48 @@ td {
     width: 100%;
     /* The width is the width of the web page */
 }
+
+
+ /* Editoral New typeface for headers */
+
+@font-face {
+    font-family: 'Editorial New';
+    src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Regular.otf') format('opentype');
+    font-weight: 400;
+ }
+
+ @font-face {
+    font-family: 'Editorial New';
+    src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Regular.otf') format('opentype');
+    font-weight: 400;
+ }
+
+ @font-face {
+    font-family: 'Editorial New';
+    src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Italic.otf') format('opentype');
+    font-weight: 400;
+ }
+
+@font-face {
+    font-family: 'Editorial New';
+    src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Ultrabold.otf') format('opentype');
+    font-weight: 800;
+ }
+
+ @font-face {
+    font-family: 'Editorial New';
+    src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-UltraboldItalic.otf') format('opentype');
+    font-weight: 800;
+ }
+
+ @font-face {
+    font-family: 'Editorial New';
+    src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Ultralight.otf') format('opentype');
+    font-weight: 200;
+ }
+
+ @font-face {
+    font-family: 'Editorial New';
+    src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-UltralightItalic.otf') format('opentype');
+    font-weight: 200;
+ }
