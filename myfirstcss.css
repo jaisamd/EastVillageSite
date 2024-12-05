@@ -232,12 +232,6 @@ td {
 
  @font-face {
     font-family: 'Editorial New';
-    src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Regular.otf') format('opentype');
-    font-weight: 400;
- }
-
- @font-face {
-    font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Italic.otf') format('opentype');
     font-weight: 400;
  }
