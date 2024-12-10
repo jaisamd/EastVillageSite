@@ -28,7 +28,7 @@ async function initMap() {
         artist: "Jonas Mekas",
         address: "31 2nd Avenue",
         description: "Opened in 1970 by Jonas Mekas, Jerome Hill, P. Adams Sitney, Peter Kubelka, and Stan Brakhage, Anthology in its original conception was a showcase for the Essential Cinema Repertory collection. An ambitious attempt to define the art of cinema by means of a selection of films which would screen continuously, the Essential Cinema collection was intended to encourage the study of the medium’s masterworks as works of art rather than disposable entertainment, making Anthology the first museum devoted to film as an art form. The project was never completed, but even in its unfinished state it represented an uncompromising critical overview of cinema’s history, and remains a crucial part of Anthology’s exhibition program.",
-        image: "Project Directory/EVimages/anthology_image.jpg",
+        image: "Project Directory/EVimages/JonasMekas.jpg",
     },
     {
         position: { lat: 40.73112, lng: -73.98631 },
@@ -52,6 +52,7 @@ async function initMap() {
         title: "La Mama Experimental Theater",
         address: "66 East 4th Street", 
         artist: "See Glossary",
+        description: "See Glossary",
     },
     {
         position: { lat: 40.7271036, lng: -73.9873551 },
@@ -82,7 +83,7 @@ async function initMap() {
         address: "383 East 10th Street",
         arists: "See Glossary",
         description: "Opened by Ed Sanders in 1964, Peace Eye Bookstore was a second home to the Beats. It was frequented by poets, musicians, and activists. Sanders recalled: “The bookstore became pretty famous. It was the stopping off point for all visiting librarians and professors because I had a lot of well-known writers hanging out there—William Burroughs, Allen Ginsberg.”[1] The shop not only played host to writers but also sold “literary curiosities,” including pubic hair from sixteen poets, Ginsberg’s cold-cream jars, and hairs from his beard. The shop was raided by the police on January 2, 1966, under the pretense of responding to a burglary. Sanders was charged with selling lewd and obscene prints and literature, and although the case was dismissed, the confiscated items were never returned, and he was effectively forced out of business.",
-       
+        image: "Project Directory/EVimages/PeaceEye.jpg",
     },
     {
         position: { lat: 40.72903, lng: -73.98632 },
@@ -104,7 +105,7 @@ async function initMap() {
         title: "The Living Theater",  
         address: "151 1st Avenue",
         artist: "See Glossary",
-        description: " '...we called it The Living Theatre, because we wanted it to change with time. People say, Yeah—the world is in lousy shape, and there are wars and horrors going on all the time. But what am I gonna do? Who am I? What can I do? And to give people the sense that there is something they can do, that they are empowered. That begins in the theatre.' —Judith Malina",
+        description: " 'We called it The Living Theatre, because we wanted it to change with time. People say, Yeah—the world is in lousy shape, and there are wars and horrors going on all the time. But what am I gonna do? Who am I? What can I do? And to give people the sense that there is something they can do, that they are empowered. That begins in the theatre.' —Judith Malina",
     },
     {
         position: { lat: 40.72851, lng: -73.99148 },
@@ -140,6 +141,7 @@ async function initMap() {
         title: "Allen Ginsberg's Studio",
         artist: "Allen Ginsberg",
         address: "437 East 12th Street",
+        description: "Pigeons shake their wings on the copper church roof</br> out my window across the street, a bird perched on</br> the cross surveys the city’s blue-grey clouds. Larry Rivers</br> ‘ll come at 10 AM and take my picture. I’m taking</br> your picture, pigeons. I’m writing you down, Dawn.</br>I’m immortalizing your exhaust, Avenue A bus.</br>O Thought! Now you’ll have to think the same thing forever!</br>Fourth Floor, Dawn, Up All Night Writing Letters by Allen Ginsberg, New York, June 7, 1980, 6:48 A.M.",
         image: "Project Directory/EVimages/AllenGinsberg.jpg",
     },
     {
@@ -186,18 +188,20 @@ async function initMap() {
         title: "Joan Mitchell Studio",
         address: "60 St. Marks Place", 
         artist: "Joan Mitchell",
+        description: "Joan Mitchell (1925–1992) was an abstract artist whose exceptional career spanned more than four decades. She worked in a variety of mediums—including oil painting, pastel on paper, and printmaking—and is widely recognized as one of the most significant artists of the post-war era. Her approach to abstraction is distinguished for its physicality, daring use of color, and direct connections to her everyday experiences of landscape, people, poetry, music, and even her beloved dogs.",
     },
     {
         position: { lat: 40.73115, lng: -73.98998 },
         title: "Area Gallery",
         address: "82 East 10th Street", 
         artist: "Tom Boutis, John Ireland Collins, Charles DuBack, Joe Fiore, Bernard Langlais, Ed Moses, Daphne Mumford, Paul Yakovenko",
+        description: "Area Gallery operated between 1958 and 1965. Its members included artists such as Lydia Brown, Jean Cohen, Charles DuBack, Tom Boutis, Ed Moses, and Joe Fiore.",
     },
     {
         position: { lat: 40.73081, lng: -73.98957 },
         title: "Phoenix Gallery",
         address: "40 3rd Avenue", 
-        artist: "",
+        artist: "Alice Forman, Philip Held, Aaron Levy, Gertrude Shibley, Alida Walsh, Florence Weinstein",
     },
     {
         position: { lat: 40.73106, lng: -73.98933 },
@@ -212,12 +216,6 @@ async function initMap() {
         artist: "Elaine de Kooning",
         description: "Abstract Expressionism, a movement rooted in the post-World War II era, was synonymous with the vibrant art scene of downtown New York. This collective of groundbreaking artists included Jackson Pollock, Lee Krasner, Willem & Elaine de Kooning, Mark Rothko, and Helen Frankenthaler, among others. While varied in their techniques, they all shared a common goal: to transcend the conventional boundaries of art through spontaneity, emotional depth, and freedom of expression.",
         image: "Project Directory/EVimages/ElainedeKooning_1974.jpg",
-    },
-    {
-        position: { lat: 40.73053, lng: -73.98799 },
-        title: "Robert Gober's Studio",
-        address: "119 East 10th Street", 
-        artist: "Robert Gober",
     },
 ];
 
