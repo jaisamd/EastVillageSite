@@ -15,40 +15,33 @@ body {
 h1 {
     font-family: 'Editorial New';
     color: black;
-    text-align: center;
-    font-size: 6.5em;
-    font-weight: 800;
+    text-align: left;
+    font-size: 6em;
+    font-weight: 400;
     font-style: italic;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-left: 120px;
     margin-right: 120px;
 }
 
-.red{
-    color: #ff0000;   
-}
-
 h2 {
-    font-family: 'Editorial New';
-    color: black;
+    color: #000000;
     text-align: left;
     font-family: 'Editorial New';
     font-style: normal; 
     font-size: 4em;
-    font-weight: 200;
+    font-weight: 400;
     margin-left: 120px;
     margin-right: 120px;
     width: 85%;
 }
 
 h3 {
-    font-family: monospace;
-    line-height: 1.5;
-    font-size: 2em;
-    font-weight: 200;
-    margin-left: 130px;
+    font-size: 1.75em;
+    font-weight: 300;
+    margin-left: 120px;
     margin-right: 120px;
-    margin-bottom: none;
+    margin-bottom: 3px;
 }
 
 h4 {
@@ -62,22 +55,22 @@ h5 {
     font-size: 1.2em;
 }
 
+h6 {
+    text-align: left;
+    font-size: 1.2em;
+}
+
 p {
     text-align: left;
     font-size: 1.3em;
     font-weight: 300;
     line-height: 1.5;
-    letter-spacing: 1px;
-    margin-left: 130px;
-    margin-right: 122px;
-    margin-top: 3px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 10px;
     margin-bottom: 1px;
 }
 
-.glossarytitle {
-    text-align: left;
-    font-weight: 300;
-  }
 
 /* special text formatting */
 #topnav {
@@ -92,9 +85,8 @@ p {
 .creds_container {
     position: left;
     text-align: left;
-    color:#e6ac25;
-    margin-left: 130px;
-    padding-bottom: 10px;
+    margin-left: 120px;
+    padding-bottom: 3%;
 }
 
 .footer-container {
@@ -139,6 +131,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 48%;
 }
 
 .imagecontainer {
@@ -204,13 +197,14 @@ td {
 /*  HELP */
 .copyright {
     position: fixed;
-    padding-left: auto;
-    padding-right: auto;
+    left: 50%;
+    right: 50%;
     bottom: 5%;
     width: 100%;
     color: red;
     border: 0;
     text-align: center;
+    font-size: x-small;
 }
 
 /*  what is this for? */
@@ -236,6 +230,18 @@ td {
     font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Regular.otf') format('opentype');
     font-weight: 400;
+    font-style: normal; 
+ }
+
+ @font-face {
+    font-family: 'Editorial New';
+    src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Italic.otf') format('opentype');
     font-weight: 400;
     font-style: italic;
@@ -245,70 +251,46 @@ td {
     font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Ultrabold.otf') format('opentype');
     font-weight: 800;
-    font-style: normal;
  }
 
  @font-face {
     font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-UltraboldItalic.otf') format('opentype');
     font-weight: 800;
-    font-style: italic;
  }
 
  @font-face {
     font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-Ultralight.otf') format('opentype');
     font-weight: 200;
-    font-style: normal;
  }
 
  @font-face {
     font-family: 'Editorial New';
     src: url('Font/PPEditorialNew-Free for personal use/PPEditorialNew-UltralightItalic.otf') format('opentype');
     font-weight: 200;
-    font-style: italic;
  }
-
 #close-modal {
     margin-top: 10px;
     padding: 5px 10px
 }
 
-
-/* to style in - depth infowindow */
-
 #modal {
     display: none;
     position: fixed;
-    height: 35%; 
-    width: 25%;
+    height: 75%; 
+    width: 65%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
     padding: 20px;
     z-index: 1000;
-    border: 2px solid black;
+    border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 #modal-content {
     max-height: calc(80vh - 80px);
-    font-size: 1em;
-    font-family:monospace;
     /* Allow for padding and title */
     overflow: scroll;
 }
-.button {
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: monospace;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-
