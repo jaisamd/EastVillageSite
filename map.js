@@ -32,10 +32,10 @@ async function initMap() {
     },
     {
         position: { lat: 40.73112, lng: -73.98631 },
-        title: "Peter Hujar's Loft",
+        title: "David Wojnarowicz / Peter Hujar Apartment",
         artist: "Peter Hujar",
         address: "189 2nd Avenue",
-        description: "See Glossary",
+        description: "David Wojnarowicz challenged the art world and castigated America for failing the LGBT community, particularly in response to the AIDS crisis. Wojnarowicz lived and worked in Hujar’s former loft from 1988 until his death from AIDS in 1992.",
         image: "Project Directory/EVimages/PeterHujar.jpg",
       
     },
@@ -81,7 +81,7 @@ async function initMap() {
         position: { lat: 40.72664, lng: -73.97788 },
         title: "Peace Eye Bookstore",
         address: "383 East 10th Street",
-        arists: "See Glossary",
+        artists: "See Glossary",
         description: "Opened by Ed Sanders in 1964, Peace Eye Bookstore was a second home to the Beats. It was frequented by poets, musicians, and activists. Sanders recalled: “The bookstore became pretty famous. It was the stopping off point for all visiting librarians and professors because I had a lot of well-known writers hanging out there—William Burroughs, Allen Ginsberg.”[1] The shop not only played host to writers but also sold “literary curiosities,” including pubic hair from sixteen poets, Ginsberg’s cold-cream jars, and hairs from his beard. The shop was raided by the police on January 2, 1966, under the pretense of responding to a burglary. Sanders was charged with selling lewd and obscene prints and literature, and although the case was dismissed, the confiscated items were never returned, and he was effectively forced out of business.",
         image: "Project Directory/EVimages/PeaceEye.jpg",
     },
@@ -141,7 +141,7 @@ async function initMap() {
         title: "Allen Ginsberg's Studio",
         artist: "Allen Ginsberg",
         address: "437 East 12th Street",
-        description: "Pigeons shake their wings on the copper church roof</br> out my window across the street, a bird perched on</br> the cross surveys the city’s blue-grey clouds. Larry Rivers</br> ‘ll come at 10 AM and take my picture. I’m taking</br> your picture, pigeons. I’m writing you down, Dawn.</br>I’m immortalizing your exhaust, Avenue A bus.</br>O Thought! Now you’ll have to think the same thing forever!</br>Fourth Floor, Dawn, Up All Night Writing Letters by Allen Ginsberg, New York, June 7, 1980, 6:48 A.M.",
+        description: "As a poet, Allen Ginsberg was a major part of one of the most important literary movements in this country but he was also known as a staunch advocate of free speech and an early proponent of sexual freedom and gay rights.  Ginsberg and his friends and fellow Beats Jack Kerouac, Gary Corso and William S. Burroughs moved to the East Village in the early 1950’s.", 
         image: "Project Directory/EVimages/AllenGinsberg.jpg",
     },
     {
@@ -158,14 +158,6 @@ async function initMap() {
         artist: "Willem de Kooning, Helen Frankenthaler, Philip Guston, Grace Hartigan, Hans Hofmann, Lee Krasner, and Jackson Pollock",
         description: "Organized by the Artist’s Club and curated by Leo Castelli in 1951, Held in 1951 in an abandoned storefront in Lower Manhattan, in a building slated to be demolished, the exhibition featured the work of around 70 artists. Almost all of the participants were virtually anonymous at the time, having been shut out by the galleries, museums, and collectors who ran the New York City scene. Their rejection stemmed largely from the fact that their work was experimental and tended to be abstract, in contradiction to the tastes of the American market.",   
         image: "Project Directory/EVimages/9thStreetShow.jpg",
-    },
-    {
-        position: { lat: 40.72949, lng: -73.97951 },
-        title: "David Wojnarowicz / Peter Hujar Apartment",
-        artist: "David Wojnarowicz",
-        address: "529 East 13th Street", 
-        description: "David Wojnarowicz challenged the art world and castigated America for failing the LGBT community, particularly in response to the AIDS crisis. Wojnarowicz lived and worked in Hujar’s former loft from 1988 until his death from AIDS in 1992.",
-        image: "Project Directory/EVimages/Wojnarowicz.jpg",
     },
     {
         position: { lat: 40.73043, lng: -73.98819 },
@@ -189,6 +181,7 @@ async function initMap() {
         address: "60 St. Marks Place", 
         artist: "Joan Mitchell",
         description: "Joan Mitchell (1925–1992) was an abstract artist whose exceptional career spanned more than four decades. She worked in a variety of mediums—including oil painting, pastel on paper, and printmaking—and is widely recognized as one of the most significant artists of the post-war era. Her approach to abstraction is distinguished for its physicality, daring use of color, and direct connections to her everyday experiences of landscape, people, poetry, music, and even her beloved dogs.",
+        image: "Project Directory/EVimages/JoanMitchell.jpg",
     },
     {
         position: { lat: 40.73115, lng: -73.98998 },
